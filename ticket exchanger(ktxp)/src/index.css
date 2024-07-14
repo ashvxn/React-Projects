@@ -79,3 +79,24 @@ body{
 
 
 }
+
+.frame{
+    height: 28vh;
+    width: 22vh;
+    /* background-color: rgb(16, 169, 216); */
+    background-image: linear-gradient(rgba(9, 172, 221, 0.808), rgb(1, 64, 94));
+
+    display :inline-block;
+   
+   
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.frame:hover{
+    background-image: linear-gradient(rgba(9, 172, 221, 0.808),rgba(9, 172, 221, 0.808));
+    transform : scale(1.1);
+    margin : 12px;
+    
+
+}
