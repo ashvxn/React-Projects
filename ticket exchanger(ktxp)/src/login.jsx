@@ -1,7 +1,10 @@
 import react from 'react' ;
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 function Login(){
+    const navigate = useNavigate();
     const[user_name, setuser_name] = useState("")
     const[password, set_password] = useState("")
     async function login_funtion(){
@@ -28,6 +31,7 @@ function Login(){
         }
         else{
             console.log("data send")
+            navigate('/Home');
         }
 
         setuser_name("");
